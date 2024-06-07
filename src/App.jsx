@@ -1,11 +1,14 @@
 import { useState } from "react";
+
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
 import Benvenuto from "./components/Welcome";
 import Counter from "./components/Counter";
-
+import WelcomeClass from "./components/WelcomeClass";
+import Timer from "./components/Timer";
+import UserProfile from "./components/UserProfile";
 function App() {
 	return (
 		<>
@@ -30,8 +33,21 @@ function App() {
 			<p className="read-the-docs">
 				Click on the Vite and React logos to learn more
 			</p>
-			<Benvenuto nome="Leonardo"></Benvenuto>
+			<Benvenuto
+				isLoggedIn={true}
+				nome="Leonardo"
+				saluta={() => alert("Ciao")}
+				heading={<h1>Heading</h1>}
+				timer={Timer}
+			></Benvenuto>
+			<UserProfile
+				name="Leonardo"
+				age={20}
+				hobbies={["Videogame", "Coding", "Cinema"]}
+			></UserProfile>
 			<Counter></Counter>
+			<WelcomeClass></WelcomeClass>
+			<Timer></Timer>
 		</>
 	);
 }
