@@ -37,7 +37,6 @@ function App() {
 				isLoggedIn={true}
 				nome="Leonardo"
 				saluta={() => alert("Ciao")}
-				heading={<h1>Heading</h1>}
 				timer={Timer}
 			></Benvenuto>
 			<UserProfile

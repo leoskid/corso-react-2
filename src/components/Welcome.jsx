@@ -1,9 +1,6 @@
 import React from "react";
 
 function Benvenuto(props) {
-<<<<<<< HEAD
-	return <h1>Ciao! Benvenuto {props.nome} !</h1>;
-=======
 	const nomi = ["Leonardo", "Roberta", "Samuele", "Gioele"];
 	const Timer = props.timer;
 	const renderMessaggio = () => {
@@ -32,7 +29,6 @@ function Benvenuto(props) {
 			<Timer></Timer>
 		</>
 	);
->>>>>>> dev
 }
 
 export default Benvenuto;
